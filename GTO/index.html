@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Alumnos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li onclick="showDashboard('alumno1')">Eduardo Santillán</li>
+                <li onclick="showDashboard('alumno2')">Aldelmo Reyes</li>
+                <li onclick="showDashboard('alumno3')">Maury</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="dashboard">
+                <h1>Dashboard de Alumnos</h1>
+                <canvas id="userChart"></canvas>
+                <canvas id="salesChart"></canvas>
+                <canvas id="radarChart"></canvas>
+                <img src="escudo.png" class="escudo" alt="Escudo" />
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

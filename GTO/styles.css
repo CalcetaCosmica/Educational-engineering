@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #002147; /* Fondo azul Oxford */
+    color: white;
+    position: fixed; /* Fija la posición */
+    top: 0; /* Ajusta la posición vertical */
+    left: 0; /* Ajusta la posición horizontal */
+    height: 100vh; /* Ajusta la altura al tamaño completo */
+    overflow-y: auto; /* Agrega desplazamiento vertical si el contenido es demasiado largo */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 15px 20px; /* Aumenta el espacio alrededor del texto */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agrega una transición suave */
+    font-size: 22px; /* Ajusta el tamaño de la letra */
+}
+
+
+.sidebar li:hover {
+    background-color: #003366; /* Cambia a un color azul menos oscuro al pasar el cursor sobre ellos */
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 200px; /* Ajusta el margen izquierdo para evitar que el contenido se solape con la barra lateral */
+}
+
+.dashboard {
+    position: relative;
+}
+
+.escudo {
+    position: absolute;
+    top: 5px; /* Ajusta la posición vertical */
+    right: 40px; /* Ajusta la posición horizontal */
+    width: 300px; /* Ajusta el tamaño del escudo */
+    height: auto;
+}
